@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="description" content="Bootstrap 4 Template For Software Startups">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
@@ -659,29 +661,221 @@ You can go to a circle by adding the address or selecting from the options when 
 					</section>//section-->
 				<!-- Commented	
 			    </article>//docs-article-->
-				<!--
+				
 			    <article class="docs-article" id="section-4">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Consumer's SDK</h1>
 					    <section class="docs-intro">
-						    <h3>Discovery - Home Screen</h3>
+						    
 							<style>
-								img {
+								html {
+								  box-sizing: border-box;
+								}
+								
+								*, *:before, *:after {
+								  box-sizing: inherit;
+								}
+								
+								.column {
 								  float: left;
+								  width: 33.3%;
+								  margin-bottom: 16px;
+								  padding: 0 8px;
+								}
+								
+								@media screen and (max-width: 650px) {
+								  .column {
+									width: 100%;
+									display: block;
+								  }
+								}
+								
+								.card {
+								  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+								}
+								
+								.container {
+								  padding: 0 16px;
+								}
+								
+								.container::after, .row::after {
+								  content: "";
+								  clear: both;
+								  display: table;
+								}
+								
+								.title {
+								  color: grey;
+								}
+								
+								.button {
+								  border: none;
+								  outline: 0;
+								  display: inline-block;
+								  padding: 8px;
+								  color: white;
+								  background-color: #000;
+								  text-align: center;
+								  cursor: pointer;
+								  width: 100%;
+								}
+								
+								.button:hover {
+								  background-color: #555;
 								}
 								</style>
 								</head>
 								<body>
 								
-								<h2>Float Left</h2>
 								
-								<p>In this example, the image will float to the left in the paragraph, and the text in the paragraph will wrap around the image.</p>
 								
-								<p><img src="consumerhomescreen1.png" alt="Pineapple" style="width:250px;height:450px;margin-right:15px;">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
 								
+								<div class="row">
+								  <div class="column">
+									<div class="card">
+									  <img src="consumer1.jpg" alt="consumer1" style="width:100%">
+									  <div class="container">
+										<h3>Home Screen</h3>
+										<p><b>Business Videos</b> where trending businesses can showcase their products.<br>
+										It has feature of configurable Application banners.<br>
+										Home screen are configurable for each circles.</p>
+									
+										
+									  </div>
+									</div>
+								  </div>
+								
+								  <div class="column">
+									<div class="card">
+									  <img src="consumer2.jpg" alt="consumer2" style="width:100%">
+									  <div class="container">
+										<h3>Home Screen</h3>
 
-						</section>//docs-intro--> 
+										<p>A complete list of all Merchants with pick/delivery options in the given circle.<br>
+										Merchants are customized per user based on past orders, bookmarks etc.</p>
+										
+										
+									  </div>
+									</div>
+								  </div>
+								  
+								  <div class="column">
+									<div class="card">
+									  <img src="consumer3.jpg" alt="John" style="width:100%">
+									  <div class="container">
+										<h3>Circle Screen</h3>
+										<p class="title"></p>
+										<p><b>Circle Search  </b>- Select the circle based on your location and interest of merchants. <br><b>Trending Circles</b> - Configurable list of circles where a lot of action is going on.
+
+
+ 
+										</p>
+										
+										
+									  </div>
+									</div>
+								  </div>
+								</div>
+								<div class="row">
+									<div class="column">
+									  <div class="card">
+										<img src="consumer4.jpg" alt="Jane" style="width:100%">
+										<div class="container">
+										  <h3>Circle Screen</h3>
+										  <p class="title"></p>
+										  <p><b>Saved Circles</b> - The circles saved in the user's profile, for quick browsing and selection. <br> <b>Suggested Circles</b> - A list of circles suggested based on the user's current location; this will encourage them to explore more!
+										  </p>
+										  
+										</div>
+									  </div>
+									</div>
+								  
+									<div class="column">
+									  <div class="card">
+										<img src="consumer5.jpg" alt="Mike" style="width:100%">
+										<div class="container">
+										  <h3>Listing Screen</h3>
+										  <p class="title"></p>
+										  <p><b>Business Categories - 
+										</b> Based on classes products are divided into business categories.<br>
+ <b>Business title</b> provides essential information and quick actions. 
+ 
+
+										</p>
+										  
+										  
+										</div>
+									  </div>
+									</div>
+									
+									<div class="column">
+									  <div class="card">
+										<img src="consumer6.jpg" alt="John" style="width:100%">
+										<div class="container">
+										  <h3>Listing Screen</h3>
+										  <p class="title"></p>
+										  <p><br><b>Business Note</b> - A configurable message(offers, store timings, etc) put up by business for consumers.<br>
+											in case of 
+											single category. <br> <b>List of products</b> will be shown.</p>
+										  
+										  
+										</div>
+									  </div>
+									</div>
+								  </div>
+								  <div class="row">
+									<div class="column">
+									  <div class="card">
+										<img src="consumer7.jpg" alt="Jane" style="width:100%">
+										<div class="container">
+										  <h3>Order Screen</h3>
+										  <p class="title"></p>
+										  <p><b>Catalog Order</b> - Add items via the catalog listing. <br>
+											<b>Address</b> - Consumers can now Add/Update/Remove for more enhanced experience.
+											<b>Delivery/Pickup </b> - After verifying cart choose option for delivery or pickup.  
+										</p>
+										  
+										  
+										</div>
+									  </div>
+									</div>
+								  
+									<div class="column">
+									  <div class="card">
+										<img src="consumer8.jpg" alt="Mike" style="width:100%">
+										<div class="container">
+										  <h3>Order Screen</h3>
+										  <p class="title"></p>
+										  <p><b>List Order</b> - Upload images(upto 5 images) of list of items.<br>
+										  <b>Notes</b> - Add notes if you want to some extra help from us. <br>
+										  <b>Send request</b> - Once you are done with everything, send request to Merchant.
+										  <br> 
+
+										  </p>
+										  
+										</div>
+									  </div>
+									</div>
+									
+									<div class="column">
+									  <div class="card">
+										<img src="consumer9.jpg" alt="John" style="width:100%">
+										<div class="container">
+										  <h3>Order Screen</h3>
+										  
+										  <p><b>Status</b> - Check status of your order. <br>
+										<b>Quick actions</b> - Reorder, Cancel for enhanced experience. <br>
+										
+										<b>Rate the business</b> - Once order is completed please Rate the business so that we can provide you better user experience. 
+
+										</p>
+										  
+										  
+										</div>
+									  </div>
+									</div>
+								  </div>
+						</section> <!--//docs-intro--> 
 				<!-- Commented	
 				    </header>
 				     <section class="docs-section" id="item-4-1">
