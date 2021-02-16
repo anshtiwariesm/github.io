@@ -38,7 +38,7 @@
 	                    <span></span>
 	                    <span></span>
 	                </button>
-	                <div class="site-logo"><IMG SRC="esamudaay.png" ALT="eSamudaay logo" WIDTH=300 HEIGHT=46></div>    
+	                <div class="site-logo"><IMG SRC="esamudaay.png" ALT="eSamudaay logo" WIDTH=250 HEIGHT=45></div>    
 
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
@@ -163,27 +163,8 @@
 					   
 
 
-						<!-- Commented by ANSH
-					     <h5>Highlight.js Example:</h5>
-						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js" target="_blank">embed your code snippets using highlight.js</a> It supports <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185 languages and 89 styles</a>.</p>
-						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">Atom One Dark</a> style for the code blocks: <br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code></p>
-						<div class="docs-code-block">
-							<pre class="shadow-lg rounded"><code class="json hljs">[
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  },
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  }
-]
-
-
-</code></pre> 
-						</div> TILL HERE --> <!--//docs-code-block -->
+						 
+						  <!--//docs-code-block -->
 						
 					
 				    </header>
@@ -639,16 +620,88 @@
 
 					<section class="docs-section" id="item-4-1">
 						<h2 class="section-heading">Directory structure</h2>
-						<p>
-							Consumer directory has name <b>esamudaay_consumer</b> in bitbucket repository.
-							esamudaay_consumer has lib file inside lib we have modules which contains codes for every features.
-							It consist of Modules, Modules has a file name Cart, Cart has three sections View, Action, Models.<br>
-							View - It has all files <br>
-							Action - All business logic files <br>
-							Models - Data models <br>
-							<br>
+						<p>Once you fork/clone esamudaay_consumer on your repository/local machine, for your smooth onboarding with eSamudaay we recommend you to understand the flow of our directory structure.<br>
+							This section consist definitions of <b>esamudaay_consumer</b> directory.</p>
+							<div class="docs-code-block">
+								<pre class="shadow-lg rounded"><code class="json hljs">
+											<p>The most basic layout looks like this</p>
+	<span class="hljs-attr">android/</span><span class="hljs-attr"></span> 
+	<span class="hljs-attr">assets/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">ios/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">lib/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">test/</span><span class="hljs-number"></span>
+	<span class="hljs-attr">.gitignore/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">README.md/</span><span class="hljs-number"></span>
+	<span class="hljs-attr">pubspec.yaml/</span><span class="hljs-attr"></span>
 
-						</p>
+	</code></pre> 
+							</div>
+	<!--<span class="hljs-attr">"title"</span> <span class="hljs-string"></span>
+		<span class="hljs-attr">"count"</span><span class="hljs-number"></span><span class="hljs-number"></span>
+		<span class="hljs-attr">"description"</span><span class="hljs-attr"></span> <span class="hljs-string"></span> <span class="hljs-attr"></span><span class="hljs-literal"></span>
+		<span class="hljs-attr">"title"</span><span class="hljs-string"></span>
+		<span class="hljs-attr">"count"</span><span class="hljs-number"></span><span class="hljs-literal"></span>
+		<span class="hljs-attr">"description"</span><span class="hljs-attr"></span><span class="hljs-string"></span> <span class="hljs-attr"></span><span class="hljs-literal"></span>-->
+		
+							
+							<div class="docs-code-block">
+								<pre class="shadow-lg rounded"><code class="json hljs">
+				<p><b>assets directory tree</b></p>
+	<span class="hljs-attr">font/</span><span class="hljs-attr"></span> 
+	<span class="hljs-attr">images/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">languages/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">lottie/</span><span class="hljs-attr"></span>
+		<ul>
+		<li><b>fonts</b> - Consists of custom fonts, in order to add new fonts add those to .tff file.</li>
+	<li><b>images</b> - A seperate folder for images used through out the application e.g. banners, logos, etc. <br>For each image assets add three resolutions and how to show it in the application will be handled by flutter.</li>
+		<li><p><b>languages</b> - Consist of all .json files for supported language translations.</li>
+		<li>Remaining folders/files are autogenerated when you set up your environment.</li>
+		</ul>
+			<br> 
+			
+		
+	</code></pre> 
+
+
+	<div class="docs-code-block">
+		<pre class="shadow-lg rounded"><code class="json hljs">
+			<p><b>lib directory tree</b></p>
+	<span class="hljs-attr">mixins/</span><span class="hljs-attr"></span> 
+	<span class="hljs-attr">models/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">modules/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">payments/razorpay/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">presentations/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">redux/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">repository/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">reusable_widgets/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">routes/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">themes/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">utilities/</span><span class="hljs-attr"></span>
+	<span class="hljs-attr">validators/</span><span class="hljs-string"></span>
+	<span class="hljs-attr">main.dart/</span><span class="hljs-number"></span> 
+	<span class="hljs-attr">store.dart/</span><span class="hljs-attr"></span>
+<ul>
+<li><b>main.dart</b> - Entry point of code execution.</li>
+<li><b>lib/modules</b> - For each features we have sub-directories. <br>Each sub-directories has three files in common   
+	1. action - A .dart file which consist of all business logic regarding the features.
+	2. model - Model file is to tell how data is structured.
+	3. views - All flutter UI/UX logic. It has sub-folders - widgets(components) and subviews.
+</li>
+<li><b>reusable_widgets</b> - Consist of common components which are used across the application.</li>
+<li><b>utilities</b> - Consists of services and constants</li>
+<li><b>redux</b> - Consist of state folder which has app state - we are using async redux for state management purpose.
+state has multiple .dart files - state variable related to that feature.</li>
+	
+</ul>
+<br> 
+
+
+</code></pre> 
+
+
+
+
+	
 
 					<section class="docs-section" id="item-4-2">
 						<h2 class="section-heading">Circle</h2>													
@@ -1092,7 +1145,7 @@ color: grey;
 	<h2 class="section-heading">Personalization</h2>
 	<ul>
 		<li>
-			<b>Languages</b> - Supports English, Hindi, Tamil, Telugu, Malayalam, etc.
+			<b>Languages</b> - Supports English, Hindi, Tamil, Telugu, Kannada, etc.
 		</li>
 		<li>
 			<b>Themes</b> - Allows to customize theme based on developer's requirements.
