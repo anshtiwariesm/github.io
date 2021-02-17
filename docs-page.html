@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>eSamudaay for developers</title>
+    <title>eSamudaay for developers
+		
+	</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -10,7 +12,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
       
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="esamudaaytitle.png"> 
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
@@ -56,13 +58,6 @@
             </div><!--//container-->
         </div><!--//branding-->
     </header><!--//header-->
- 
-	
-	
-
-	 
-	
-
 
     <div class="docs-wrapper">
 	    <div id="docs-sidebar" class="docs-sidebar">
@@ -77,13 +72,13 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Step 6 - Launch</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Infrastructure</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>Installation</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Consumers' App</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Consumer App</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Directory Structure</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Features</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Packages</a></li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Packages</a></li> -->
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Personalization</a></li>
 				</ul>
-		    </nav><  
+		    </nav>
 
 
 	
@@ -106,7 +101,7 @@
 					</section>
 					<section class="docs-section" id="item-1-2">
 						<h2 class="section-heading">Step 2 - Source Code for mobile applications</h2>
-						<p>We will also provide you with a source code for mobile applications. These are fully functional production-ready mobile applications built in Flutter. 
+						<p>We will also provide you with a source code for mobile applications. These are fully functional production-ready mobile applications built in flutter. 
 							You will have the right to modify the source code the way you like.<br> Here are the current production versions of these mobile applications.</p>
 							<ul>
 								<li><a href="https://play.google.com/store/apps/details?id=in.foore.mobile" target="_blank" >Merchant App  </a></li>
@@ -125,7 +120,7 @@
 					<section class="docs-section" id="item-1-4">
 						<h2 class="section-heading">Step 4 - Circle Promoter Console</h2>
 						<p>You will get access to a console (CP console) to monitor your marketplace at all times. 
-							This console will allow you to be on top of essential metrics like New orders, delivery status, businesses to be onboarded, lead management, transaction reports, etc.
+							This console will allow you to be on top of essential metrics like new orders, delivery status, businesses to be onboarded, lead management, transaction reports, etc.<br> 
 							CP console is built using low code technology, thus allows for customization as per your need.
 						</p>
 					</section>	
@@ -146,13 +141,13 @@
 						</p>
 					</section>
 			    </article>
-				<!--
+				
 			    <article class="docs-article" id="section-2">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Infrastructure</h1>
 					    <section class="docs-intro">
-						    <p>Our goal is to build a technology ecosystem that enables developer entrepreneurs to start, manage and grow their commerce circle by providing digital tools to developer entrepreneurs to promote self-reliance and compete on quality of customer experience with global leaders.<br>
-							<br>We allow developers to fork from our bitbucket repository as far as our technology infrastructure is concerned. We use flutter/dart, Django framework for APIs, and digital ocean for hosting.</p>
+						    <p>Our goal is to build a technology ecosystem that enables developer entrepreneurs to start, manage and grow their commerce circle by providing them digital tools to promote self-reliance and compete on quality of customer experience with global leaders.<br>
+							<br>We allow developers to fork/clone from our bitbucket repository as far as our technology infrastructure is concerned. We use flutter/dart, Django framework for APIs, and digital ocean for hosting.</p>
 					</header>
 							<ul>
 							<li>We use two environments - Staging and Prod.</li>
@@ -207,16 +202,40 @@
 								<br>
 			<br>
 								<b>Step 3 - Add TPID</b><br>
-								Once you get the TPID from our tech team, you have to follow the following path to add TPID in the consumer app.
-								Consumer App(bitbucket)</a> - esamudaay_consumer/lib/utilities/stringConstants.dart <br><br>
+								Once you get the TPID from our team, you have to follow this path and replace third Party Id with assigned one.<br>
+								Consumer App - esamudaay_consumer/lib/utilities/stringConstants.dart <br>
+				
+									<div class="docs-code-block">
+										<pre class="shadow-lg rounded"><code class="json hljs">
+													
+	<span class="hljs-attr"></span><span class="hljs-attr">/// Replace the value for thirdPartyId here</span> 
+	<span class="hljs-attr"></span><span class="hljs-string">static const thirdPartyId = "YOUR_VALUE_HERE";</span>		
+			</code></pre> 
+			</div>
+								<br><br>
 								<b>Step 4 - Staging and production environment</b><br>
-								Switch to staging and prod environment by following this path in the <b>esamudaay_consumer</b> directory. <br>
-								<a href="https://bitbucket.org/ese1/esamudaay_consumer" target="_blank" >Consumer App(bitbucket)</a> - esamudaay_consumer/lib/utilities/URLs.dart
+								Switch to staging and prod environment by following this path in the our root directory. <br>
+								Consumer App - esamudaay_consumer/lib/utilities/stringConstants.dart <br>
+								<div class="docs-code-block">
+									<pre class="shadow-lg rounded"><code class="json hljs">
+												
+	<span class="hljs-attr"></span><span class="hljs-attr">/// Switch environment value here to define the development/production phase.</span> 
+	<span class="hljs-attr"></span><span class="hljs-attr">/// for developement purpose, use ENVIRONMENT.DEVELOPMENT</span>
+	<span class="hljs-attr"></span><span class="hljs-attr">/// for production, use ENVIRONMENT.PRODUCTION</span> 
+	<span class="hljs-attr"></span><span class="hljs-string">static const ENVIRONMENT environmentVariable = YOUR_VALUE_HERE;</span>		
+		</code></pre> 
+		</div>
+								
+								
 						<br>
 								<br>
 								<b>Step 5 - Flutter run</b><br>
-								Once you are done with the above steps, you can run and execute the flutter by following this command.<br>
-								<code>flutter run</code>
+								Once you are done with the above steps, you can run and execute the application by following this command.<br>
+								<div class="docs-code-block">
+									<pre class="shadow-lg rounded"><code class="json hljs">
+	<span class="hljs-attr"></span><span class="hljs-string">flutter run</span>		
+		</code></pre> 
+		</div>
 						</section>
 					</header>
 				</article>
@@ -240,18 +259,18 @@
 											
 	<span class="hljs-attr">android/</span><span class="hljs-attr"></span> 
 	<span class="hljs-attr">assets/</span><span class="hljs-string"></span>
-		<span class="hljs-attr">font/</span><span class="hljs-attr"></span> 
-		<span class="hljs-attr">images/</span><span class="hljs-string"></span>
-		<span class="hljs-attr">languages/</span><span class="hljs-number"></span> 
+		<span class="hljs-string">font/</span><span class="hljs-attr"></span> 
+		<span class="hljs-string">images/</span><span class="hljs-string"></span>
+		<span class="hljs-string">languages/</span><span class="hljs-number"></span> 
 	<span class="hljs-attr">ios/</span><span class="hljs-number"></span> 
 	<span class="hljs-attr">lib/</span><span class="hljs-attr"></span>
-		<span class="hljs-attr">modules/</span><span class="hljs-number"></span> 
-		<span class="hljs-attr">payments/</span><span class="hljs-attr"></span>
-		<span class="hljs-attr">redux/</span><span class="hljs-number"></span> 
-		<span class="hljs-attr">repository/</span><span class="hljs-attr"></span>
-		<span class="hljs-attr">reusable_widgets/</span><span class="hljs-string"></span> 
-		<span class="hljs-attr">utilities/</span><span class="hljs-attr"></span>
-		<span class="hljs-attr">main.dart/</span><span class="hljs-number"></span> 
+		<span class="hljs-string">modules/</span><span class="hljs-number"></span> 
+		<span class="hljs-string">payments/</span><span class="hljs-attr"></span>
+		<span class="hljs-string">redux/</span><span class="hljs-number"></span> 
+		<span class="hljs-string">repository/</span><span class="hljs-attr"></span>
+		<span class="hljs-string">reusable_widgets/</span><span class="hljs-string"></span> 
+		<span class="hljs-string">utilities/</span><span class="hljs-attr"></span>
+		<span class="hljs-string">main.dart/</span><span class="hljs-number"></span> 
 	<span class="hljs-attr">test/</span><span class="hljs-number"></span>
 	<span class="hljs-attr">.gitignore/</span><span class="hljs-attr"></span>
 	<span class="hljs-attr">README.md/</span><span class="hljs-number"></span>
@@ -264,11 +283,12 @@
 	<li><b>images</b> - A seperate folder for images used through out the application e.g. banners, logos, etc. <br>For each image, add three resolutions and showing it in the application will be handled by flutter..</li>
 		<li><p><b>languages</b> - Consist of all JSON files for supported language translations.</li>
 	<li><b>main.dart</b> - Entry point of code execution.</li>
-	<li><b>modules</b> - We use MVC patterns and for each features there are sub-directories.
+	<li><b>modules</b> - We use MVC pattern. <br>
+		For each folder of the features there are following sub-directories.
 		<ul>
 			<li><b>model</b> - Model file is to define how data is structured</li>
-			<li><b>action</b> - A dart file which consist of all business logic regarding the features </li>
 			<li><b>views</b> - All flutter UI/UX logic. It has sub-folders - widgets(components) and subviews</li>
+			<li><b>action</b> - A dart file which consist of all business logic regarding the features </li>
 		</ul>
 	</li>
 	<li><b>reusable_widgets</b> - Consist of common components which are used across the application.</li>
@@ -283,6 +303,7 @@
 					<section class="docs-section" id="item-4-2">
 						<h2 class="section-heading">Features</h2>													
 <br>
+<section>
 <h3>Circle</h3>
 <style>
 	html {
@@ -295,7 +316,7 @@
 	
 	.column {
 	  float: right;
-	  width: 33.33%;
+	  width: 25%;
 	  margin-bottom: 16px;
 	  padding: 0 8px;
 	}
@@ -339,11 +360,11 @@
 		  </div>
 		</div>
 	  </div>
-	-->
+
 	
 	<!-- <div class="row"> -->
 
-<!--
+
 		<div class="column">
 		  <div class="card">
 			<img src="consumer4.jpg" alt="Jane" style="width:100%">
@@ -366,205 +387,192 @@
 		List of saved circles in the user's profile for quick browsing and selection.<br><br>
 		<b>Suggested Circles</b><br>
 		A list of circles suggested based on the user's current location; will encourage them to explore more!<br><br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+	</section>
+	</section>
 <br>
 
+<section>
+<h3>Home screen</h3>
+<style>
+	html {
+	  box-sizing: border-box;
+	}
+	
+	*, *:before, *:after {
+	  box-sizing: inherit;
+	}
+	
+	.column {
+	  float: right;
+	  width: 25%;
+	  margin-bottom: 16px;
+	  padding: 0 8px;
+	}
+	
+	@media screen and (max-width: 650px) {
+	  .column {
+		width: 100%;
+		display: block;
+	  }
+	}
+	
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+	
+	.container {
+	  padding: 0 16px;
+	}
+	
+	.container::after, .row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	
+	.title {
+	  color: grey;
+	}
 	
 
+	
+	</style>
+
+	<div class="column">
+		<div class="card">
+		  <img src="consumer2.jpg" alt="Circle Screen Screenshot - 1" style="width:100%">
+		  <div class="container">
+			
+			<p class="title"></p>
+			
+		  </div>
+		</div>
+	  </div>
+
+	
+	<!-- <div class="row"> -->
 
 
-
-	<h3>Home Screen</h3>												
-<style>
-html {
-box-sizing: border-box;
-}
-
-*, *:before, *:after {
-box-sizing: inherit;
-}
-
-.column {
-float: right;
-width: 33.33%;
-margin-bottom: 16px;
-padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-.column {
-width: 100%;
-display: block;
-}
-}
-
-.card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-padding: 0 16px;
-}
-
-.container::after, .row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-.title {
-color: grey;
-}
-
-
-
-</style>
-
-<div class="column">
-<div class="card">
-<img src="consumer2.jpg" alt="Circle Screen Screenshot - 2" style="width:100%">
-<div class="container">
-
-<p class="title"></p>
-
-</div>
-</div>
-</div>
-  
--->
-
-<!-- <div class="row"> -->
-
-<!--
-<div class="column">
-<div class="card">
-<img src="consumer1.jpg" alt="" style="width:100%">
-<div class="container">
-
-<p class="title"></p>
-
-
-
-</div>
-</div>
-</div>
-
-<p>
-	We allow CP to do <b>Top-level customization</b> in their Circle on the home screen. <br>
-For example; In Kolkata - Where the locals predominantly consume fishes so CP can create a specific banner in which on tap users will see a list of restaurants/fish sellers in that Circle. <br>
- Based on past orders, bookmarks, etc. merchant list can be customized <br>
-On the home screen, we allow searching merchants based on the products. For example, if you search for leather shoes, the home screen will list merchants who have leather shoes in their shop. <br>
-Show Circle promotional-specific banners to make it more localized.
-For example, in the Agra circle, CP can put the Taj Mahal in the upper banner. <br>
-
-<b>Connect with store owner directly</b>  <br>
-We follow the decentralization of the data and hence provide 100% transparency between the end-users. <br>
-<b>Business Videos</b> <br>
-Where trending businesses can showcase their products. <br>
-</p>
-
+		<div class="column">
+		  <div class="card">
+			<img src="consumer1.jpg" alt="Jane" style="width:100%">
+			<div class="container">
+			
+			  <p class="title"></p>
+			  
+			
+			  
+			</div>
+		  </div>
+		</div>
+	
+		<p>
+			We allow CP to do <b>Top-level customization</b> in their Circle on the home screen. <br>
+		For example; In Kolkata - Where the locals predominantly consume fishes so CP can create a specific banner in which on tap users will see a list of restaurants/fish sellers in that Circle. <br>
+		 Based on past orders, bookmarks, etc. merchant list can be customized <br>
+		On the home screen, we allow searching merchants based on the products. For example, if you search for leather shoes, the home screen will list merchants who have leather shoes in their shop. <br>
+		Show Circle promotional-specific banners to make it more localized.
+		For example, in the Agra circle, CP can put the Taj Mahal in the upper banner. <br>
+		
+		<b>Connect with store owner directly</b>  <br>
+		We follow the decentralization of the data and hence provide 100% transparency between the end-users. <br>
+		<b>Business Videos</b> <br>
+		Where trending businesses can showcase their products. <br>
+		</p>
+	</section>
 
 <br>
-<br>	<h3>Product Catalog</h3>													
-<style>
-html {
-box-sizing: border-box;
-}
-
-*, *:before, *:after {
-box-sizing: inherit;
-}
-
-.column {
-float: right;
-width: 33.33%;
-margin-bottom: 16px;
-padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-.column {
-width: 100%;
-display: block;
-}
-}
-
-.card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-padding: 0 16px;
-}
-
-.container::after, .row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-.title {
-color: grey;
-}
-
-
-
-</style>
-
-<div class="column">
-<div class="card">
-<img src="consumer6.jpg" alt="Circle Screen Screenshot - 2" style="width:100%">
-<div class="container">
-
-<p class="title"></p>
-
-</div>
-</div>
-</div>
--->
-
-<!-- <div class="row"> -->
-
-<!--
-<div class="column">
-<div class="card">
-<img src="consumer5.jpg" alt="" style="width:100%">
-<div class="container">
-<p class="title"></p>
-</div>
-</div>
-</div>
-
-We have <a href="#item-4-3">packages</a> that can be fork/clone from our repository.<br><br>
-<b>Upload your shopping list</b><br>
-You have your shopping list ready? Just upload the images of it or select from your favorite store's inventory and place your order.<br><br>
-<b>Business Categories</b><br>
-Based on classes, products can be divided into business categories.<br><br>
-<b>Business Note</b><br>
-A configurable message(offers, store timings, etc.) put up by business for consumers.<br>
+<section class="docs-section" id="#"></section>
+<br>
+	<h3>Product catalog</h3>
+	
+	<style>
+		html {
+		  box-sizing: border-box;
+		}
+		
+		*, *:before, *:after {
+		  box-sizing: inherit;
+		}
+		
+		.column {
+		  float: right;
+		  width: 25%;
+		  margin-bottom: 16px;
+		  padding: 0 8px;
+		}
+		
+		@media screen and (max-width: 650px) {
+		  .column {
+			width: 100%;
+			display: block;
+		  }
+		}
+		
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+		
+		.container {
+		  padding: 0 16px;
+		}
+		
+		.container::after, .row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		
+		.title {
+		  color: grey;
+		}
+		
+	
+		
+		</style>
+	
+		<div class="column">
+			<div class="card">
+			  <img src="consumer7.jpg" alt="Circle Screen Screenshot - 1" style="width:100%">
+			  <div class="container">
+				
+				<p class="title"></p>
+				
+			  </div>
+			</div>
+		  </div>
+	
+		
+		<!-- <div class="row"> -->
+	
+	
+			<div class="column">
+			  <div class="card">
+				<img src="consumer5.jpg" alt="Jane" style="width:100%">
+				<div class="container">
+				
+				  <p class="title"></p>
+				  
+				
+				  
+				</div>
+			  </div>
+			</div>
+		
+			
+	<b>Upload the images of the shopping list</b><br>
+	Supports feature of uploading upto 5 images per order, we use image compression feature for better efficiency.<br><br>
+	<b>Business Categories</b><br>
+	Based on classes, products can be divided into business categories.<br><br>
+	<b>Business Note</b><br>
+	A configurable message(offers, store timings, etc.) put up by business for consumers.<br></p>
+	
 <br>
 <br>
+<br><br><br>
+<br><br>
 <br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+	<section class="docs-section" id="#"></section>
 <br>
 <br>
 
@@ -580,7 +588,7 @@ box-sizing: inherit;
 
 .column {
 float: right;
-width: 33.33%;
+width: 25%;
 margin-bottom: 16px;
 padding: 0 8px;
 }
@@ -636,7 +644,6 @@ color: grey;
 	  </div>
 	</div>
   </div>
-  <br>
 
 		<p>
 			<b>Payment</b><br>
@@ -655,8 +662,13 @@ Supports order tracking to monitor the progress of your shipment.<br>
 Ask the user to rate the order after completion and individual products as well. <br>
 <b>Customer Support</b><br> 
 Provides the option to take the team's help to clear queries of the customers. <br>
-		</p>		
-<section class="docs-section" id="item-4-3"></section>
+	</p>		
+<!--  <section class="docs-section" id="item-4-3"></section> -->
+<br>
+
+
+
+<!-- 
 	<h2 class="section-heading">Packages</h2>
 	<ul>
 		<li><a href="#" target="_blank">Themes</a></li>
@@ -675,14 +687,16 @@ Provides the option to take the team's help to clear queries of the customers. <
 
 	</ul>
 
-	
+-->	
 </section>
+
+<section class="docs-section" id="#"></section>
 <section class="docs-section" id="item-4-4">
 	<h2 class="section-heading">Personalization</h2>
 	<ul>
 		<li>
 			<b>Languages</b> - Supports English, Hindi, Tamil, Telugu, Kannada, etc. <br>
-			If the developer wants to add new languages, then they can follow these steps.
+			<!--If the developer wants to add new languages, then they can follow these steps. -->
 		</li>
 		<li>
 			<b>Themes</b> - Developers can customize themes based on their requirements.
@@ -691,7 +705,7 @@ Provides the option to take the team's help to clear queries of the customers. <
 	</ul>
 </section>			
 				
--->				
+			
 					<!--
 					<section class="docs-section" id="item-3-2">
 						<h2 class="section-heading">Merchants' Apps</h2>
