@@ -17,7 +17,37 @@
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-
+	
+	<style>
+		.blink {
+		  animation: blinker 0.6s linear infinite;
+		  color: #1c87c9;
+		  font-size: 30px;
+		  font-weight: bold;
+		  font-family: sans-serif;
+		}
+		@keyframes blinker {
+		  50% {
+			opacity: 0;
+		  }
+		}
+		.blink-one {
+		  animation: blinker-one 1s linear infinite;
+		}
+		@keyframes blinker-one {
+		  0% {
+			opacity: 0;
+		  }
+		}
+		.blink-two {
+		  animation: blinker-two 1.4s linear infinite;
+		}
+		@keyframes blinker-two {
+		  100% {
+			opacity: 0;
+		  }
+		}
+	  </style>
 </head> 
 
 <body>    
@@ -26,6 +56,7 @@
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
 					<div class="site-logo"><IMG SRC="images/esamudaay.png" ALT="eSamudaay logo" WIDTH=250 HEIGHT=45></div>
+						
 	           
 						  
                 </div><!--//docs-logo-wrapper-->
@@ -36,20 +67,55 @@
 	            </div><!--//docs-top-utilities-->
             </div><!--//container-->
         </div><!--//branding-->
+	
     </header><!--//header-->
-    
-    
+	<!-- 
+	<style>
+		.containers {
+		  position: relative;
+		  text-align: center;
+		  color: white;
+		}
+		
+		
+		
+		.top-left {
+		  position: absolute;
+		  top: 100px;
+		  left: 150px;
+		}
+
+		
+		
+		
+		
+		</style>
+    <div class="containers">
+		<a div class="site-logo" href="https://www.esamudaay.com"><img src="images/1601226086972.png" alt="Manipal Banner" style="width:100%;">
+		<div class="top-left">Event cum recruitment drive at Manipal <br>
+		Event will be live from 15th April 2021 <br>
+	Click here to Register<b>(Deadline - 7th April 2021)</b></div> </a>
+	  </div>
+	-->
+	<div class="pt-3 text-center">
+		
+		<h4 style="background-color: #6f42c1; color:white;" ><br>eSamudaay Student Meet and recruitment - Manipal Institute of Technology Chapter<br> <br> Online event starting from 15th April.
+			<br><br>
+		Last day to register - 7th April 2021<br><br><a class="btn btn-light" href="A blank link" target="_blank">Register</a><br><br></h4>
+		
+	</div>
+
     <div class="page-header theme-bg-dark py-5 text-center position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
+
 	    <div class="container">
-		    <h1 class="page-heading single-col-max mx-auto">Built for your business, powered by eSamudaay</h1>
+		    <h1 class="page-heading single-col-max mx-auto">Built for developer entrepreneurs, powered by eSamudaay</h1>
 		    <div class="page-intro single-col-max mx-auto">Welcome to the "Plug and run" marketplace, bundled with cloud technology that makes it easy for you to start and easy to expand. <br> Browse the latest developer documentation, including how-to guide, sample code, articles, and API references.</div>
 		    <div class="main-search-box pt-3 d-block mx-auto">
-                 
+                
              </div>
 	    </div>
     </div><!--//page-header-->
+	
     <div class="page-content">
 	    <div class="container">
 		    <div class="docs-overview py-5">
@@ -67,7 +133,7 @@
 									
 									
 									Our promise is to help you build and launch your own customized marketplace in <b>14</b> days or less. 
-									<br>Rest assured, we handhold you till you get your final product.
+						
 									
 							    </div>
 							    <a class="card-link-mask" href="docs-page.html#section-1"></a>
@@ -79,12 +145,13 @@
 						    <div class="card-body">
 							    <h6 class="card-title mb-3">
 								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-network-wired"></i>
+								        <i class="fas fa-cloud-download-alt"></i>
 							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Infrastructure</span>
+							        <span class="card-title-text">Installation</span>
 							    </h6>
 							    <div class="card-text">
-									Documentation of the required backend infra and DevOps structure related to server performance and stats. <br>
+								<!--	Documentation of the required backend infra and DevOps structure related to server performance and stats.  -->  
+								Setting up flutter environment in just 5 steps								
 							    </div>
 							    <a class="card-link-mask" href="docs-page.html#section-2"></a>
 						    </div><!--//card-body-->
@@ -95,12 +162,12 @@
 						    <div class="card-body">
 							    <h6 class="card-title mb-3">
 								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-cloud-download-alt"></i>
+								        <i class="fas fa-laptop-code"></i>
 							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Installation </span>
+							        <span class="card-title-text">Circle-Promoter Console </span>
 							    </h6>
 							    <div class="card-text">
-								<p> Setting up flutter environment in just 5 steps</p>
+								<p>Learn about CP console and available end features.</p>
 									<br>
 										<!--The available endpoints and how to use those.<br>
 										API URL and request/response payloads in general.<br> -->
@@ -120,7 +187,7 @@
 								    <span class="theme-icon-holder card-icon-holder mr-2">
 								        <i class="fas fa-users"></i>
 							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Consumer App </span>
+							        <span class="card-title-text">Consumer App</span>
 							    </h6>
 							    <div class="card-text">
 									<!-- Explains every feature of Consumers' SDK in detail.<br> -->
@@ -137,7 +204,7 @@
 								    <span class="theme-icon-holder card-icon-holder mr-2">
 								        <i class="fas fa-store"></i>
 							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Merchant App </span>
+							        <span class="card-title-text">Merchant App</span>
 							    </h6>
 							    <div class="card-text">
 										<!-- Explains every feature of Merchants' SDK in detail. -->
@@ -167,25 +234,21 @@
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
+
+					
 				    <div class="col-12 col-lg-4 py-3">
 					    <div class="card shadow-sm">
 						    <div class="card-body">
 							    <h6 class="card-title mb-3">
 								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-laptop-code"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Circle-Promoter Console</span>
+								        <i class="fas fa-server"></i>
+							        </span>
+							        <span class="card-title-text">API reference</span>
 							    </h6>
 							    <div class="card-text">
 					
-										Learn about CP console and available end features .
-									<!--Create & track leads effectively.<br>
-									Add sellers to the circle with ease.</li>
-									<li>Create/ Manage business catalogs.</li>
-									<li>Order management.</li>
-									<li>Subscriptions & settlements.</li>
-									</ul> -->
-						    
+									A guide to get started with eSamudaay's backend APIs.		
+								
 								</div>
 							    <a class="card-link-mask" href="docs-page.html#section-7"></a>
 						    </div><!--//card-body-->
@@ -196,63 +259,47 @@
 						    <div class="card-body">
 							    <h6 class="card-title mb-3">
 								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-calendar-alt"></i>
+								        <i class="fas fa-lightbulb"></i>
 							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Upcoming events </span>
+							        <span class="card-title-text">FAQs</span>
 							    </h6>
 							    <div class="card-text">
-									<b>Coming Soon</b> <br>
+									Refer to these latest FAQs or feel free to contact us.<br>
 									<br>
-								 <ul>
-									 <li>Getting started with the eSamadaay hackathon.</li>
+									
 									 
-								 </ul>   						    
+														    
 								</div>
 							    <a class="card-link-mask" href="docs-page.html#section-8"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
+					<!-- 
 				    <div class="col-12 col-lg-4 py-3">
 					    <div class="card shadow-sm">
 						    <div class="card-body">
 							    <h6 class="card-title mb-3">
 								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-lightbulb"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">FAQs </span>
+								        <i class="fas "></i>
+							        </span>
+							        <span class="card-title-text"></span>
 							    </h6>
 							    <div class="card-text">
 					
-									Refer to these latest FAQs or feel free to contact us.<br>
-									We to handhold you till you get your final product.<br>
 									
 									
 								    						    
 								</div>
 							    <a class="card-link-mask" href="docs-page.html#section-9"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
+						    </div>
+					    </div>
+				    </div>
+				-->
 			    </div><!--//row-->
 		    </div><!--//container-->
 		</div><!--//container-->
     </div><!--//page-content-->
-
-    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-			<!--
-		    <h3 class="mb-2 text-white mb-3">Launch Your Software Project Like A Pro</h3>
-		    <div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project and start getting traction from your target users? Check out our premium <a class="text-white" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/">Bootstrap 4 startup template CoderPro</a>! It has everything you need to promote your product.</div>
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/">Get CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-		    -->
-			</div>
-	    </div>
-    </section><!--//cta-section-->
-
-               
+             	
     
     <footer class="footer">
 
@@ -263,15 +310,12 @@
 					<li class="list-inline-item"><a href="https://twitter.com/e_samudaay"><i class="fab fa-twitter fa-fw"></i></a></li>
 					<li class="list-inline-item"><a href="https://www.facebook.com/esamudaay"><i class="fab fa-facebook fa-fw"></i></a></li>
 					<li class="list-inline-item"><a href="https://www.instagram.com/esamudaay/?hl=en"><i class="fab fa-instagram fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp fa-fw"></i></a></li>
 					<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
 				</ul>
 	    <!--//social-list-->
 	        
 	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #6f42c1;"></i> by <a class="theme-link" href="https://esamudaay.com" target="_blank">eSamudaay</a> for developers</small>
-            
-	        
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #6f42c1;"></i> by <a class="theme-link" href="https://esamudaay.com" target="_blank">eSamudaay</a> for developers</small> 
 	    </div>
 	    
     </footer>
